@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>login</title>
+  <link rel="stylesheet" href="vignesh.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="login">
+      <div class="mom">
+    <h1 class="l">login</h1><br/>
+    <div class="ue">
+    <input class="user" id="username" type="text" name="username" placeholder="username"  required/><i  style="position: absolute;
+    top: 148px;
+    left:35px;" class="fa fa-user-circle-o"></i>
+    <span class="u"></span>
+    </div>
+    <div class="ue">
+    <input class="user" id="pad" type="password" name="password" placeholder="password"  required>
+    <i   style="position: absolute;
+      top: 230px;
+      left:35px;" class="fa fa-key"></i>
+    <span class="n"></span>
+    </div>
+    <p>
+      <input class="box" type="checkbox"  onclick="show()" /><label class="show"><b>Show Password</b></label>
+    </p>
+    <br/>
+    <br/>
+    <br />
+    <br />
+    <button class="submit" id="submit"  onclick="submit()">login</button>
+    </div>
+  </div>
+  <script type="text/javascript">
+  function show(){
+    var hide = document.getElementById('pad');
+    if (hide.type=='password'){
+        hide.type='text';
+    }
+    else{
+        hide.type='password';
+    }
+  }
+  function submit(){
+    var un= document.getElementById('username');
+    var pw= document.getElementById('pad');
+    if(un.value=='nampallyvigneshkumarvarma@gmail.com'&&pw.value=='iamnampally'){
+      window.open('https://kdjjg7uipztnfnxvzb9l9q.on.drv.tw/');
+    }
+    else{
+      alert('username or password is wrong');
+    }
+  }
+  
+  </script>
+</body>
+</html>
